@@ -1,0 +1,11 @@
+{
+  "name": "npm-scaffold",
+  "version": "1.0.0",
+  "description": "A utility for automating boilerplate project setup configurations for commonly used stacks",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
