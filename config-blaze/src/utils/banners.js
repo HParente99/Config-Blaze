@@ -2,8 +2,21 @@ import gradient from 'gradient-string'
 import { get } from 'node-emoji'
 
 const fireEmote = get('fire')
-const titleGradient = gradient('yellow', 'orange', 'red',)('Config-Blaze')
 
-const banner = fireEmote + ' ' + titleGradient + ' ' + fireEmote
+function flameGradient(gradientColors, string) {
+	return gradient(gradientColors)(string)
+}
 
-console.log(banner)
+const flameGradientColors = [
+	'red',
+	'orange',
+	'yellow',
+	'orange',
+	'red'
+]
+const borderString = flameGradient(flameGradientColors, '<<-------------->>')
+const titleString = flameGradient(flameGradientColors, 'Config-Blaze')
+
+const banner = fireEmote + ' ' + titleString + ' ' + fireEmote
+
+console.log(borderString + '\n' + banner + '\n' + borderString)
