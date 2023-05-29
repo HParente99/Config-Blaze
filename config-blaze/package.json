@@ -1,14 +1,15 @@
 {
-  "name": "npm-scaffold",
+  "name": "config-blaze",
   "version": "1.0.0",
-  "description": "A utility for automating boilerplate project setup configurations for commonly used stacks",
-  "main": "index.js",
+  "description": "Blaze through configurations like they're boilerplate.",
+  "main": "src/cli/index.js",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepublish": "{{include.package_manager}} run build",
     "flow": "flow"
   },
+  "bin": "./src/cli/index.js",
   "author": "Hunter N. Parente",
   "license": "ISC",
   "dependencies": {

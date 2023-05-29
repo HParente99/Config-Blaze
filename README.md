@@ -1,4 +1,4 @@
-# npm-scaffold
+# Config-Blaze
 ___
 A CLI utility for the automated scaffolding of development dependencies for node projects.
 
