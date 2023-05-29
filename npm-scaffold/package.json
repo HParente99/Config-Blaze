@@ -3,13 +3,22 @@
   "version": "1.0.0",
   "description": "A utility for automating boilerplate project setup configurations for commonly used stacks",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublish": "{{include.package_manager}} run build",
+    "flow": "flow"
   },
-  "author": "",
+  "author": "Hunter N. Parente",
   "license": "ISC",
   "dependencies": {
+    "commander": "^10.0.1",
     "handlebars": "^4.7.7",
-    "shelljs": "^0.8.5"
+    "js-yaml": "^4.1.0"
+  },
+  "devDependencies": {
+    "flow-bin": "^0.207.0",
+    "flow-remove-types": "^2.207.0",
+    "prettier": "^2.8.8"
   }
 }
